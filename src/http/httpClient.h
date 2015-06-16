@@ -7,7 +7,7 @@
 #ifndef _DMCLIB_CORE_COMM_HTTP_HTTPCLIENT_H_
 #define _DMCLIB_CORE_COMM_HTTP_HTTPCLIENT_H_
 
-#include "core/comm/socket/socket.h"
+#include <sockets/socket.h>
 #include <string>
 
 #include "httpResponse.h"

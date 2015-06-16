@@ -4,7 +4,7 @@
 // Date: 2015-Jan-10
 //----------------------------------------------------------------------------------------------------------------------
 // Simple http server
-#include <core/comm/socket/socketServer.h>
+#include <sockets/socketServer.h>
 #include <cassert>
 #include "httpResponse.h"
 #include "httpServer.h"
