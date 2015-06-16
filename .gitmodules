@@ -1,0 +1,3 @@
+[submodule "lib/dmc_sockets"]
+	path = lib/dmc_sockets
+	url = https://github.com/Domocracy/dmc_sockets
