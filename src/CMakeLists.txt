@@ -53,5 +53,11 @@ if(CMAKE_COMPILER_IS_GNUCXX)
 endif()
 
 # cjson parser
+
+
 add_library(dmc_http STATIC ${JSON_SOURCE_FILES})
+
 target_include_directories(dmc_http PUBLIC ${PROJECT_SOURCE_DIR})
+target_include_directories(dmcNode PUBLIC ${PROJECT_SOURCE_DIR}/../lib/dmc_sockets/src)
+
+target_link_libraries(dmcNode LINK_PUBLIC dmc_sockets)
