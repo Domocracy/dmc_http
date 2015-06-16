@@ -55,9 +55,9 @@ endif()
 # cjson parser
 
 
-add_library(dmc_http STATIC ${JSON_SOURCE_FILES})
+add_library(dmc_http STATIC ${HTTP_SOURCE_FILES})
 
 target_include_directories(dmc_http PUBLIC ${PROJECT_SOURCE_DIR})
-target_include_directories(dmcNode PUBLIC ${PROJECT_SOURCE_DIR}/../lib/dmc_sockets/src)
+target_include_directories(dmc_http PUBLIC ${PROJECT_SOURCE_DIR}/../lib/dmc_sockets/src)
 
-target_link_libraries(dmcNode LINK_PUBLIC dmc_sockets)
+target_link_libraries(dmc_http LINK_PUBLIC dmc_sockets)
