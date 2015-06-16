@@ -7,9 +7,9 @@
 #include "httpClient.h"
 #include <iostream>
 
-#include <core/comm/socket/socket.h>
-#include <core/comm/http/httpRequest.h>
-#include <core/comm/http/httpResponse.h>
+#include <sockets/socket.h>
+#include <http/httpRequest.h>
+#include <http/httpResponse.h>
 
 namespace dmc { namespace http {
 
