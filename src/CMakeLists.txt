@@ -24,7 +24,7 @@
 # SOFTWARE.
 ################################################################################
 cmake_minimum_required (VERSION 2.4)
-project(http)
+project(dmc_http)
 
 # Collect all sources
 file(GLOB_RECURSE HTTP_SOURCE_FILES "http/*.cpp" "http/*.h" "http/*.inl")
@@ -46,12 +46,12 @@ macro(GroupSources curdir)
 	endforeach()
 endmacro()
 
-GroupSources(http)
+GroupSources(dmc_http)
 
 if(CMAKE_COMPILER_IS_GNUCXX)
     add_definitions(-std=c++11)
 endif()
 
 # cjson parser
-add_library(http STATIC ${JSON_SOURCE_FILES})
-target_include_directories(http PUBLIC ${PROJECT_SOURCE_DIR})
+add_library(dmc_http STATIC ${JSON_SOURCE_FILES})
+target_include_directories(dmc_http PUBLIC ${PROJECT_SOURCE_DIR})
